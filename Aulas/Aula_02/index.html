@@ -1,64 +1,69 @@
-<!DOCTYPE html lang="pt-br">
-<meta charset="utf-8">
-<html>
-    <head>
-    	<title>Aula Prática 2 - Calculadora</title> 
-    </head>
-    <body style="background-color: #c4c4c4">
-        <h1>Aula Prática 2 - Calculadora</h1>
-        <p>Veremos, nesta atividade, práticas relacionadas à arquitetura cliente-servidor, com a utilização de um servidor web python, fornecendo em rede local um conjunto de operações realizadas por javascript. </p> 
-        <p> O Objetivo dessa atividade consiste em auxiliar no aprendizado de conceitos relacionados ao HTML, CSS e Javascript, bem como às práticas edutivas do modelo cliente-servidor. </p>
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Implantação e Administração de Sistemas Web</title>
 
-        <div id="Calc" style="background-color: gray; margin: 0 auto; width: 50%;" >
-        	 
-        	 <h3> Calculadora:</h3> 
-        	 
-        	 
-        	 <h4> Valor 1 <input type="value" id ="V1"></h4> 
-        	 <h4> Valor 2 <input type="value" id ="V2"></h4>
+    <!-- Bootstrap -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
-        	 <h4> Operação (1 - Soma; 2 - Subtração; 3 - Divisão; 4 - Multiplicação): </h4>
-        	 
-        	 <input type="number" id="Opr" min="1" max="4" value ="1">
-        	 
-        	 <button onclick="Calc()">Calcular</button> 
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+           <a class="navbar-brand" href="/2018_2/index.html">Web-Pronatec</a>
         </div>
+        <div id="navbar" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/2018_2/Links.html">Links Importantes</a></li> 
+            <li><a href="/2018_2/Aulas/index.html">Aulas Práticas</a></li>
+           <!-- <li class="active"><a href="">Inicial</a></li><li><a href="#contact">Contact</a></li>
+           -->
+            
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
 
-        <script type="text/javascript">
+    <div class="container">
+      <div>
+        <h2 style="margin-top: 100px"> Implantação e Administração de Serviços Web  - Aula Prática 2 </h2>
 
-        	var a=0, b=0; 
-        	var op = 1; 
+        <p>Veremos, nesta atividade, práticas relacionadas à arquitetura cliente-servidor, com a utilização de um servidor web python, fornecendo em rede local um conjunto de operações realizadas por javascript.</p>
+        <p>O Objetivo dessa atividade consiste em auxiliar no aprendizado de conceitos relacionados ao HTML, CSS e Javascript, bem como às práticas edutivas do modelo cliente-servidor.</p>
+        
+        <h3><a href="/2018_2/Aulas/Aula_02/Calculadora.html">Calculadora </a>(Demonstração).</h3>
+        <h3>Baixe <a href="https://drive.google.com/open?id=1p5LSMkzrVDE9TftZwNX5gipxNliA4ZxS">aqui</a> os arquivos para esta prática.</h3>
+      </div>                
+    </div><!-- /.container -->
 
+   
+                  
+    </div>
+       
+        
 
-        	function Calc(){	
-
-        		a = document.getElementById('V1');
-        		b = document.getElementById('V2');
-
-        		var A = parseInt(a.value);
-        		var B = parseInt(b.value);
-
-        		op = document.getElementById('Opr').value;
-
-        		var result = 0;
-
-        		if(op == 1)
-        			result = A+B;
-        		if(op == 2)
-        			result = A-B;
-        		if(op == 3)
-        			result = A/B;
-        		if(op == 4)
-        			result = A*B;
-
-        		alert("O Resultado da Operação " + op + " é: "+ result);
-
-        	}
-
-
-        </script>
-
-
-    </body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+     <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  </body>
 </html>

@@ -1,0 +1,31 @@
+body {
+    background-color: #fefbd8;
+}
+
+h1 {
+    background-color: #80ced6;
+}
+
+input {
+	width: 50px;
+}
+
+#Calc {
+	background-color: #d1d1d1;
+	margin: 0 auto;
+	width: 50%; /* Valor da Largura */
+	height: 150px;
+	/*height: 50%;  Valor da Altura */
+}
+#Entrada {
+	height: 30px;
+	margin: 0 auto;
+	width: 50%;
+}
+
+#Botoes {
+	margin: 0 auto;
+	width: 50%;
+
+}
+
