@@ -9,6 +9,9 @@ function Som(){
     alert("("+a+"+"+b+") = " + resultado);
 }
 
+
+
+
 function Sub(){
 	var a = parseInt(document.getElementById('A').value);
     var b = parseInt(document.getElementById('B').value);

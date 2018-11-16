@@ -44,14 +44,27 @@
       
       <img src="/2018_2/fig/logos.png" alt="logos" style="margin: 0 auto; width: 50%;">
       
+      <form>
+        Digite a senha:
+        <input type="password" name="psw" id = "pass">
+        <button onclick="entrar()"> Entrar </button> 
 
-      <h2> Implantação e Administração de Serviços Web - Aulas Práticas </h2>
+      </form>   
 
-      <h3><a href="/2018_2/Aulas/Aula_01/">Aula Web 01</a></h3>
-      <h3><a href="/2018_2/Aulas/Aula_02/">Aula Web 02 - Calculadora</a></h3>
-      <h3><a href="/2018_2/Aulas/Aula_03/">Aula Web 03 - Menu</a></h3>
-      <h3><a href="/2018_2/Aulas/Aula_04/">Aula Web 04 - Form. Contato</a></h3>
+      <script type="text/javascript">
+      
+      var log = false;
+      function entrar(){
 
+        if(document.getElementById('pass').value == "6358648")
+          log = true;
+        else
+          log = false;
+
+        console.log(log);
+      }
+
+      </script>
 
     </div>       
         
