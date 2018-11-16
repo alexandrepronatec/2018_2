@@ -65,15 +65,6 @@ body {
 
 }
 
-
-form {
-    font-family: Verdana,Tahoma,sans-serif;
-    font-size: 15px;
-    background-color: #CC3300;
-    max-width: 500px;
-}
- 
- 
 input, textarea {
     width: 200px;
     padding: 10px;
@@ -83,34 +74,28 @@ input, textarea {
     -moz-border-radius: 5px;
     border: 1px solid;
 }
- 
-input:hover, textarea:hover, input:focus, textarea:focus {
-  
-    background-color: #D6D6D6;
-    color: black;
-    font-weight: bold;
-}
- 
-.submit input {
-    height: 40px;
-    width: 100px;
-    font-weight: bold;
-    border-radius: 5px;
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border: 1px solid;
-    color: black;
-}
- 
+
+
 textarea {
     width: 400px;
     height: 120px;
     line-height: 20px;
     max-width: 400px;
 }
- 
-form label {
-    margin-left: 20px;
-    color: #FFFFFF;
+
+input:hover, textarea:hover, input:focus, textarea:focus {
+  
+    background-color: #D6D6D6;
+    color: black;
     font-weight: bold;
 }
+
+
+
+label {
+    margin-left: 20px;
+    color: black;
+    font-weight: bold;
+}
+ 
+
